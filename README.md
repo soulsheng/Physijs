@@ -1,8 +1,10 @@
-Physijs
+Physijs 汉化
 =======
-#### Physics plugin for [three.js](https://github.com/mrdoob/three.js)
+#### Physics plugin for [three.js](https://github.com/mrdoob/three.js) —— three.js的物理引擎插件
 
 Physijs brings a very easy to use interface to the three.js framework. One of the reasons three.js is so popular is because it is so incredibly easy for graphics newbies to get into 3D programming. Physijs takes that philosophy to heart and makes physics simulations just as easy to run. In fact, there are just [five easy steps](https://github.com/chandlerprall/Physijs/wiki/Basic-Setup) that must be taken to make a 3D scene come alive.
+
+three.js最大的特点就是简单易用，物理动力学插件Physics继承这个优点，只需要<a href="https://github.com/soulsheng/Physijs/wiki/Basic-Setup">六步</a>就能让你的三维场景活起来。
 
 #### How does Physijs work?
 Physijs is built on top of [ammo.js](https://github.com/kripken/ammo.js/) (although there is also a [cannon.js branch](https://github.com/chandlerprall/Physijs/tree/cannon)) and runs the physics simulation in a separate thread (via web worker) to avoid impacting in your application's performance and taking up your your 3D rendering time.
