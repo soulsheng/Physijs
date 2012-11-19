@@ -19,7 +19,7 @@
           <a id="forkme_banner" href="https://github.com/chandlerprall/Physijs">Fork Me on GitHub</a>
 
           <h1 id="project_title">Physijs</h1>
-          <h2 id="project_tagline">Physics plugin for Three.js</h2>
+          <h2 id="project_tagline">Three.js 物理动力学插件</h2>
 
           <section id="downloads">
             <a class="zip_download_link" href="https://github.com/chandlerprall/Physijs/zipball/master">Download this project as a .zip file</a>
@@ -35,8 +35,8 @@
 		
 		<h1>Physijs</h1>
 		
-		<h3>Examples</h3>
-<p>
+		<h3>Examples 例子</h3>
+        <p>
   <a href="examples/vehicle.html"><img src="examples/vehicle.jpg" alt="vehicle"></a>
   <a href="examples/jenga.html"><img src="examples/jenga.jpg" alt="jenga"></a>
   <a href="examples/heightfield.html"><img src="examples/heightfield.jpg" alt="heightfield"></a>
@@ -44,44 +44,35 @@
   <a href="examples/compound.html"><img src="examples/compound.jpg" alt="compound shapes"></a>
   <a href="examples/shapes.html"><img src="examples/shapes.jpg" alt="all shapes"></a>
   <a href="examples/body.html"><img src="examples/body.jpg" alt="vehicle"></a>
-  <a href="examples/collisions.html"><img src="examples/collisions.jpg" alt="jenga"></a>
-</p>
+  <a href="examples/collisions.html"><img src="examples/collisions.jpg" alt="jenga"></a></p>
 
-<h4>Physics plugin for <a href="https://github.com/mrdoob/three.js">three.js</a>
-</h4>
+<h4>Physics plugin for <a href="https://github.com/mrdoob/three.js">three.js</a> </h4>
 
 <p>Physijs brings a very easy to use interface to the three.js framework. One of the reasons three.js is so popular is because it is so incredibly easy for graphics newbies to get into 3D programming. Physijs takes that philosophy to heart and makes physics simulations just as easy to run. In fact, there are just <a href="https://github.com/chandlerprall/Physijs/wiki/Basic-Setup">five easy steps</a> that must be taken to make a 3D scene come alive.</p>
-
-<h4>How does Physijs work?</h4>
+<p>three.js最大的特点就是简单易用，物理动力学插件Physics继承这个优点，只需要<a href="https://github.com/chandlerprall/Physijs/wiki/Basic-Setup">五步</a>就能让你的三维场景活起来。</p>
+<h4>How does Physijs work? 物理插件功能原理</h4>
 
 <p>Physijs is built on top of <a href="https://github.com/kripken/ammo.js/">ammo.js</a> (although there is also a <a href="https://github.com/chandlerprall/Physijs/tree/cannon">cannon.js branch</a>) and runs the physics simulation in a separate thread (via web worker) to avoid impacting in your application's performance and taking up your your 3D rendering time.</p>
 
-<p>A lot of effort has been made to keep the style of code the same when using Physijs. Apart from <a href="https://github.com/chandlerprall/Physijs/wiki/Updating-an-object's-position-&amp;-rotation">updating an object's position</a>, all of the normal three.js conventions remain the same. If you are used to three.js, you already know how to use the Physijs plugin.</p>
+<p>插件在一个新的线程里面运行，不会占用渲染时间，所以避免影响原来的渲染效率。</p>
 
-<h4>Who is this for?</h4>
+<h4>Who is this for? 这个插件能用来做什么</h4>
 
-<p>You, hopefully. If you are familiar with <a href="https://github.com/mrdoob/three.js">three.js</a> and want to add physics to your scene, this is the plugin for you. No mucking about with shape definitions, keeping objects in their correct positions, or identifying collisions - simply use a few Physijs objects in place of three.js's and you'll automatically have a dynamic environment.</p>
+<p>但愿你属性three.js，并且想加入物理引擎功能，这个插件非常适合你. 不用改变 原有设计- 简单地加入一些额外的碰撞体就能获取一个动态的模拟环境。</p>
 
-<p>If you need (or want) a feature not already included then add it to the <a href="https://github.com/chandlerprall/Physijs/issues">issue tracker</a> or implement it yourself and send over a pull request.</p>
-
-<h3>Features</h3>
+<h3>Features 特性</h3>
 <ul>
-  <li>Support for <a href="https://github.com/chandlerprall/Physijs/wiki/Basic-Shapes">multiple object shapes</a>, including convex objects and heightfields.</li>
-  <li>Material system provides simple control over friction and restitution ("bounciness")</li>
-  <li>Integrated collision detection and events</li>
-  <li>Compound objects using the hierarchy system in three.js</li>
+  <li>Support for <a href="https://github.com/chandlerprall/Physijs/wiki/Basic-Shapes">multiple object shapes</a>, including convex objects and heightfields. 支持模型和地形</li>
+  <li>Material system provides simple control over friction and restitution ("bounciness") 支持摩擦和弹性</li>
+  <li>Integrated collision detection and events 集成碰撞检测</li>
+  <li>Compound objects using the hierarchy system in three.js 模型分组嵌套</li>
   <li>Full constraint system including Point, Hinge, Degree of Freedom, and more</il>
-  <li>Vehicle systems</li>
-  <li>Rotations using either euler or quaternion systems - your preference</li>
-  <li>Built seamlessly on top of three.js to keep the same convention and coding style</li>
+  支持主从约束
+  <li>Vehicle systems 车辆模拟</li>
+  <li>Rotations using either euler or quaternion systems - your preference 旋转支持欧拉角和四元数两种模式</li>
+  <li>Built seamlessly on top of three.js to keep the same convention and coding style 无缝集成three.js</li>
 </ul>
-
-<h3>In the Future</h3>
-<ul>
-  <li>Full Documentation</li>
-  <li>Concave shape decomposition</li>
-</ul>
-      </section>
+</section>
     </div>
 
     <!-- FOOTER  -->
